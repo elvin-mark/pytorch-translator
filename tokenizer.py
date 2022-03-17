@@ -30,7 +30,7 @@ def get_tokenizer(lang):
         return Tokenizer()
     elif lang == "kr":
         return Tokenizer(delim="")
-    elif lang == "jp":
+    elif lang == "jap":
         return Tokenizer(delim="")
     elif lang == "cn":
         return Tokenizer(delim="")

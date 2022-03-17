@@ -79,7 +79,7 @@ def evaluate_one_sentence(x, encoder, decoder, dev, max_length=MAX_LENGTH):
     with torch.no_grad():
         x = x.to(dev)
         lx = len(x)
-        h = encoder.init_hidden()
+        h = encoder.init_hidden().to(dev)
         eo = torch.zeros(max_length, encoder.hidden_size).to(dev)
 
         for i in range(lx):

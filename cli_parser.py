@@ -2,7 +2,7 @@ from argparse import ArgumentParser
 from email.policy import default
 
 INPUT_LANG = ["spa"]
-OUTPUT_LANG = ["kr"]
+OUTPUT_LANG = ["kr", "jap"]
 
 
 def create_train_parser():
